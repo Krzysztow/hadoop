@@ -1,0 +1,6 @@
+Program from Hadoop: The definitive guide, that checks current settings. 
+
+Useful for checking default settings on cluster and if the added settings are applied.
+
+Usage:
+hadoop jar ConfigurationReader.jar ConfigurationReader [./local-config.xml] #the last optional parameter is to override settings.
