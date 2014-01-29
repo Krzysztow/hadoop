@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!-- Configuration file to be used for testing the programs locally.
+  Checked with the ConfigurationReader that it sets the mapred.job.tracker value to local.
+  
+  Problem: on our cluster it doesn't set the fs.default.name - the property is final.
+-->
+
+<configuration>
+
+  <property>
+      <name>fs.default.name</name>
+          <value>file:///</value>
+            </property>
+              
+  <property>
+      <name>mapred.job.tracker</name>
+          <value>local</value>
+            </property>
+              
+</configuration>
+
