@@ -10,3 +10,4 @@ Test/
 TransposeMatrix
 	(Java) implementation of the MapReduce job that transposes matrix.
 	(C++) implementation of map-only job that turns lines to uppercase.
+	(C++) deduplicates lines in a file.
