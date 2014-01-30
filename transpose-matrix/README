@@ -9,5 +9,6 @@ It works as follows:
 	3) each reducer gets groups of values for each row (their are ordered by column no) - so itearate over them and append by a string builder.
 
 To run, execute:
-	hadoop jar ./build/jar/TransposeMatrix.jar TransposeMatrix /user/s1250553/ex2/matrixSmall.txt /user/s1367762//tests//transpose
+	jar <jar-file-path> org.krzysztow.mapreduce.TransposeMatrix <input-file> <output-file>
+	jar ./build/jar/TransposeMatrix.jar org.krzysztow.mapreduce.TransposeMatrix /user/s1250553/ex2/matrixSmall.txt /user/s1367762//tests//transpose
 
