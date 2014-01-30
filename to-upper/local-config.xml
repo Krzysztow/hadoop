@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<configuration>
+	<property>
+		<name>mapred.job.tracker</name>
+		<value>local</value>
+	</property>
+	<property>
+	// Set the binary path on DFS
+		<name>hadoop.pipes.executable</name>
+		<value>./task1</value>
+	</property>
+</configuration>
+

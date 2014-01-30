@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<configuration>
+<property>
+<!--Set the binary path on DFS - it is to be changed-->
+  <name>hadoop.pipes.executable</name>
+  <value>/user/s1367762/bin/task1</value>
+</property>
+<!--we have not specified a C++ record reader or writer - use java default ones-->
+<property>
+  <name>hadoop.pipes.java.recordreader</name>
+  <value>true</value>
+</property>
+<property>
+  <name>hadoop.pipes.java.recordwriter</name>
+  <value>true</value>
+</property>
+<!--I had problems with timeouts, thus increase-->
+<property>
+    <name>dfs.socket.timeout</name>
+	<value>1000000</value>
+</property>
+<property>
+    <name>dfs.datanode.socket.write.timeout</name>
+	<value>1000000</value>
+</property>
+<property>
+	<!-- Set no reducers, it's very important in this task--> 
+	<name>mapred.reduce.tasks</name>
+	<value>0</value>
+</property>
+<property>
+	<!-- Set no separator between emitted empy keys and values (uppercase lines) -->
+	<name>mapred.textoutputformat.separator</name>
+	<value> </value>
+</property>
+</configuration>

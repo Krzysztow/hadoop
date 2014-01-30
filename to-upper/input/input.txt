@@ -1,0 +1,3 @@
+This is some file
+with at least two lines
+and another line goes here
