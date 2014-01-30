@@ -1,0 +1,13 @@
+Program transposes matrix which each row has format:
+	[rowNo]	[col1] [col2] [col3] ... [colN]
+
+It works as follows:
+	1) fetch the first line from the file, parse it and get the number of columns (this gives us a freedom 
+		of using multiple reducers instead of one - partitioner shares the output fairly and appropriate rows (ordered) to
+		consecutive reducers - so their output is already in order - no additional job is needed);
+	2) map task emits every column element with (newRow, newCol)  tuple as a key;
+	3) each reducer gets groups of values for each row (their are ordered by column no) - so itearate over them and append by a string builder.
+
+To run, execute:
+	hadoop jar ./build/jar/TransposeMatrix.jar TransposeMatrix /user/s1250553/ex2/matrixSmall.txt /user/s1367762//tests//transpose
+
