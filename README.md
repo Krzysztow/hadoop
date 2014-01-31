@@ -15,3 +15,5 @@ Hadoop things. Wokring with version:
 	(C++) implementation of map-only job that turns lines to uppercase.  
 ## deduplicate-lines ##
 	(C++) deduplicates lines in a file.  
+## join ##
+	(Python) implementation of the simple join between two schemas (stored in one file). 
