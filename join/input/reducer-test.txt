@@ -1,0 +1,4 @@
+1_mark	(EXC, 70)
+1_student	George
+1_mark	(ADBS, 80)
+1_mark	(TTS, 80)

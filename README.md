@@ -1,7 +1,9 @@
 hadoop
 ======
 
-hadoop things
+Hadoop things. Wokring with version:
+	Hadoop 0.20.2
+	Subversion https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707
 
 ## tests ##	
 	- ConfigurationReader - prints output of the current configuration (+ updated config by -conf <config-xml-file>);  
